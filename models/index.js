@@ -10,11 +10,11 @@ const db = {};
 
 let sequelize = new Sequelize({
   host: config.host,
+  port: config.port,
   username: config.username,
   password: config.password,
-  port: config.port,
   database: config.database,
-  dialect: 'mysql q'
+  dialect: 'mysql'
 })
 
 fs
